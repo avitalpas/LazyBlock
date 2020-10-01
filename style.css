@@ -13,7 +13,11 @@ body{
     padding: 20px;
     position: relative;
     margin: 100px auto 0 auto;
+}
+
+#animation1:hover{
     animation: anim1 3s infinite;
+
 }
 
 @keyframes anim1{
