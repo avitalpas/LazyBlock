@@ -1,8 +1,24 @@
 
 body{
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('https://2.bp.blogspot.com/-UQz6Qc3WIcE/VH31egm41tI/AAAAAAAAAKQ/as4tzyvDVvg/s1600/Beautiful%2BNature%2BBeach%2BWallpaper%2BHd%2BBackground%2BWallpaper%2B19%2BHD%2BWallpapers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
     
+#animations{
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    height: 100%;
+}
+
 #animation1{
     width: 150px;
     background-color: rgba(255, 0, 0, 0.596);
@@ -12,12 +28,13 @@ body{
     text-align: center;
     padding: 20px;
     position: relative;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
+    transition: 1s ease;
+    cursor: pointer;
 }
 
 #animation1:hover{
     animation: anim1 3s infinite;
-
 }
 
 @keyframes anim1{
@@ -28,6 +45,7 @@ body{
     100%{ left: -40px; background-color: rgba(255, 0, 0, 0.596);}    
 }
 
+/* --------------------- mobile --------------------- */
 @media (max-width: 768px){
     body{
         background-color: red;
