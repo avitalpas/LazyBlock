@@ -9,6 +9,7 @@ body{
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    font-size: 16px;
 }
     
 #animations{
@@ -19,7 +20,7 @@ body{
     height: 100%;
 }
 
-#animation1{
+#lazy-block{
     width: 150px;
     background-color: rgba(255, 0, 0, 0.596);
     border-radius: 5px;
@@ -31,28 +32,62 @@ body{
     margin: 50px auto 0 auto;
     transition: 1s ease;
     cursor: pointer;
-}
-
-#animation1:hover{
     animation: anim1 3s infinite;
+    margin-bottom: 20px;
 }
 
 @keyframes anim1{
-    0%{ left: -40px; background-color: rgba(255, 0, 0, 0.596);}
+    0%{ left: -40px; background-color: rgba(0, 195, 255, 0.596);}
     25%{ left: 0px; background-color: black;}
-    50%{ left: 40px; background-color: rgba(255, 0, 0, 0.596);}
+    50%{ left: 40px; background-color:rgba(0, 195, 255, 0.596);}
     75%{ left: 0px; background-color: black;}
-    100%{ left: -40px; background-color: rgba(255, 0, 0, 0.596);}    
+    100%{ left: -40px; background-color: rgba(0, 195, 255, 0.596);} 
 }
 
-/* --------------------- mobile --------------------- */
-@media (max-width: 768px){
-    body{
-        background-color: red;
-    }
-    
-    #animation1{
-        font-size: 20px;
-    }
 
-}
+// ---------------------- ghost ----------------------
+.ghost-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -64.5px;
+    margin-top: -85.5px;
+  }
+  
+  .ghost {
+    animation: float 3s ease-out infinite;
+  }
+  
+  @keyframes float {
+    50% {
+       transform: translate(0, 20px);
+    }
+  }
+  .shadowFrame {
+    width: 130px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .shadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center;
+    ellipse {
+      transform-origin: center center;
+    }
+  }
+  
+  @keyframes shrink {
+    0% {
+      width: 90%;
+      margin: 0 5%;
+    }
+    50% {
+      width: 60%;
+      margin: 0 18%;
+    }
+    100% {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
