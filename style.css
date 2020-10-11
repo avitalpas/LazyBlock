@@ -72,6 +72,12 @@ hr.style-four {
   cursor: pointer;
 }
 
+// comming-soon
+#comming-soon-text{
+  color:red !important;
+	font-weight: 900 !important;
+}
+
 
 
 
@@ -1290,6 +1296,7 @@ hr.style-four {
       max-width: 100%;
     }
 
+    #aquarium,
     .aquarium{
       display: none;
     }
