@@ -1291,9 +1291,7 @@ hr.style-four {
     }
 
     .aquarium{
-      margin: 0;
-      margin-left: -120px;
-      margin-top: -40px;
+      display: none;
     }
 
   }
