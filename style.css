@@ -3,8 +3,8 @@ body{
     font-family: 'Rubik', sans-serif;
     text-align: center;
     margin-top: 50px;
-    background-color: black;
-    background-repeat: no-repeat;
+    background-image: url('https://i.pinimg.com/originals/59/e7/58/59e758cd94b6a989aa2cc7b4eeb68098.jpg');
+    background-repeat: repeat-y;
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -602,7 +602,7 @@ hr.style-four {
 // Number thirteen
 @include generateNumAnimation(160, 10);
 
-/* ----------------------   ---------------------- */
+/* ---------------------- aquarium ---------------------- */
 #aquarium{
   margin-bottom: 50px;
 
@@ -611,7 +611,7 @@ hr.style-four {
 .aquarium {
   position: relative;
   overflow: hidden;
-  background: black;
+  background: transparent;
   width: 800px;
   height: 500px;
   margin: auto;
