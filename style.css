@@ -73,7 +73,7 @@ hr.style-four {
 }
 
 // comming-soon
-#comming-soon-text{
+#comming-soon p{
   color:red !important;
 	font-weight: 900 !important;
 }
